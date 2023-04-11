@@ -1,11 +1,10 @@
 from student import Student
-from student import init
 
 
 def main():
-
-    st1 = Student()
-    st2 = Student()
+    st1 = Student("Alex", 20, 10)
+    st2 = Student("Kate", 18, 7)
+    st3 = Student("Peter", 21, 9)
 
     # init(st1, "Alex", 20, 10)
     # init(st2, "Kate", 18, 8)
@@ -29,6 +28,7 @@ def main():
     #
     print(vars(st1))
     print(vars(st2))
+    print(vars(st3))
 
 
 if __name__ == "__main__":
