@@ -14,4 +14,4 @@ class Manager:
                 avg += student.mark
                 count += 1
 
-        return avg / len(ls)
+        return avg / count
