@@ -11,7 +11,7 @@ class Manager:
 
         for bus in buses:
             if isinstance(bus, Bus):
-                if (bus.price / bus.number) < (target.price / target.number):
+                if (bus._price / bus._number) < (target._price / target._number):
                     target = bus
 
         return target
