@@ -1,16 +1,22 @@
 class Counter:
-    def __init__(self,count=0):
-        self.count = count
+    def __init__(self, count=0):
+        if count >= 0:
+            self.__count = count
+        else :
+            self.__count=0
+
+    def get_count(self):  #
+        return self.__count
 
     def increment(self):
-        self.count += 1
+        self.__count += 1
 
     def decrement(self):
-        if self.count != 0:
-            self.count -= 1
+        if self.__count != 0:
+            self.__count -= 1
 
     def resep(self):
-        self.count = 0
+        self.__count = 0
 
     def __str__(self):
-        return "Counter:" + str(self.count)
+        return "Counter:" + str(self.__count)

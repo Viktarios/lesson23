@@ -8,7 +8,7 @@ c1.increment()
 c1.increment()
 c2.increment()
 c3.decrement()
-c1.resep()
+# c1.resep()
 
 print(c1)
 print(c2)
