@@ -5,7 +5,8 @@ class Counter:
         else :
             self.__count=0
 
-    def get_count(self):  #
+    @property
+    def count(self):
         return self.__count
 
     def increment(self):
