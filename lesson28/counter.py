@@ -5,7 +5,6 @@ class Counter:
         else:
             self.__count = 0
 
-
     @property
     def count(self):
         return self.__count
@@ -14,6 +13,7 @@ class Counter:
     def count(self, count):
         if count >= 0:
             self.__count = count
+
     @count.deleter
     def count(self):
         del self.__count
@@ -25,7 +25,7 @@ class Counter:
         if self.__count != 0:
             self.__count -= 1
 
-    def resep(self):
+    def reset(self):
         self.__count = 0
 
     def __str__(self):
