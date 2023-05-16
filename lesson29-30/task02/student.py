@@ -6,6 +6,9 @@ class Student(Human):
         super().hello()
         print(" I'm a student.")
 
+    def work(self):
+        print("I can study")
+
 
 def main():
     h = Human("Trueman")

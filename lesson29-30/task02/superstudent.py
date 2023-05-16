@@ -5,6 +5,9 @@ class SuperStudent(Student):
         msg = f"Hi! I'm a super student with name {self.name}"
         print(msg)
 
+    def work(self):
+        print("I can study hurd")
+
 
 
 

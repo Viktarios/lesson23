@@ -1,5 +1,5 @@
 class Human:
-    def __init__(self, name="no name"):
+    def __init__(self, name="no name",):
         self.name = name
 
     def __str__(self):
@@ -7,3 +7,6 @@ class Human:
 
     def hello(self):
         print(f"Hello! I'm {self.name}", end='')
+
+    def work(self):
+        print(f"I can study")
