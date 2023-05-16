@@ -5,7 +5,7 @@ class Student(Human):
         self.__mark = mark
 
     def can_study(self):
-        print(self.__name + "can study.")
+        print(self.name + " can study.")
 
     @property
     def mark(self):
@@ -16,3 +16,6 @@ class Student(Human):
         if 0 <= mark <= 10:
             self.__mark = mark
 
+    def __str__(self):
+        return (super().__str__()
+                + f" Mark : {self.__mark}")

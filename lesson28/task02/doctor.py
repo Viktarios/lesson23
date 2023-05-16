@@ -7,7 +7,7 @@ class Doctor(Human):
         self.__experience = experience
 
     def can_cure(self):
-        print(self.__name + "can cure.")
+        print(self.name + " can cure.")
 
     @property
     def experience(self):
@@ -21,4 +21,4 @@ class Doctor(Human):
 
     def __str__(self):
         return (super().__str__()
-               + f"Experience : {self.__experience}")
+               +  f" Experience : {self.__experience}")

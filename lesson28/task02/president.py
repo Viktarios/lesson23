@@ -5,7 +5,7 @@ class President(Human):
         self.__power = power
 
     def can_run(self):
-        print(self.__name + "can run.")
+        print(self.name + " can run.")
 
     @property
     def power(self):
@@ -18,4 +18,4 @@ class President(Human):
 
     def __str__(self):
         return (super().__str__()
-               + f"Power : {self.__power}")
+               +  f" Power : {self.__power}")

@@ -32,5 +32,5 @@ class Human:
             self.__alive = alive
 
     def __str__(self):
-        return f"{self.__name}: age={self.__age}, " \
-               f"Is live? - {self.is_alive}"
+        return f"{self.__name}: age= {self.__age}, " \
+               f"Is live? -  {self.is_alive} . "

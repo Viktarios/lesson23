@@ -5,7 +5,7 @@ class Worker(Human):
         self.__salary = salary
 
     def can_work(self):
-        print(self.__name + "can work.")
+        print(self.name + " can work.")
 
     @property
     def salary(self):
@@ -18,4 +18,4 @@ class Worker(Human):
 
     def __str__(self):
         return (super().__str__()
-               + f"Salary : {self.__salary}")
+               + f" Salary : {self.__salary}")
