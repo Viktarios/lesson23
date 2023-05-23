@@ -1,0 +1,3 @@
+class ShopAssistance:
+    @staticmethod
+    def

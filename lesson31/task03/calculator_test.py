@@ -4,11 +4,20 @@ from calculator import Calculator
 
 class CalculatorTaste(unittest.TestCase):
 
-    def setUp(self):
-        self.calc = Calculator()
+    @staticmethod
+    def setUp(cls):
+        cls.calc = Calculator()
 
-    def tearDown(self):
-        del self.calc
+    @staticmethod
+    def tearDown(cls):
+        del cls.calc
+
+
+    #def setUp(self):
+        #self.calc = Calculator()
+
+    #def tearDown(self):
+        #del self.calc
 
     def testAddPositive(self):
         a = 5
