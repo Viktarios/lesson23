@@ -1,5 +1,7 @@
-class Bread:
+from entity.product import Product
+class Bread(Product):
     def __init__(self,color ='black', flour ='first', price =0):
+        super().__init__(price)
         self.__color=color
         self.__flour = flour
         self.__price = price
@@ -31,4 +33,4 @@ class Bread:
     def __str__(self):
         return (f"Bread: color = {self.__color}, "
                 f"flour = {self.__flour}, "
-                f"price = ${self.__price}")
+                f"price = ${self.price}")
