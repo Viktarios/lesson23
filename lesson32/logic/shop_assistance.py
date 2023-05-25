@@ -10,7 +10,7 @@ class ShopAssistance:
                 product = basket.get_product(i)
 
                 if isinstance(product, Product):
-                    total += product.money
+                    total += product.price
 
             return total
         else:
