@@ -1,5 +1,5 @@
-from container.basket import Basket
-from entity.product import Product
+from lesson32.container.basket import Basket
+from lesson32.entity.product import Product
 
 class ShopAssistance:
     @staticmethod
@@ -13,3 +13,5 @@ class ShopAssistance:
                     total += product.money
 
             return total
+        else:
+            return 0

@@ -1,7 +1,7 @@
-from entity.milk import Milk
-from entity.bread import Bread
-from entity.orange import Orange
-from  entity.product import Product
+from lesson32.entity.milk import Milk
+from lesson32.entity.bread import Bread
+from lesson32.entity.orange import Orange
+from  lesson32.entity.product import Product
 class Basket:
     def __init__(self, products=None):
         if not products:

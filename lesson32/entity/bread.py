@@ -1,4 +1,4 @@
-from entity.product import Product
+from lesson32.entity.product import Product
 class Bread(Product):
     def __init__(self,color ='black', flour ='first', price =0):
         super().__init__(price)
