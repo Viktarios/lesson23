@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
-'//*[@id="rso"]/div[1]/div/div/div[1]/div/a/h3'
+
 
 
 class SimpleGoogleTest(unittest.TestCase):
@@ -19,6 +19,7 @@ class SimpleGoogleTest(unittest.TestCase):
     def testSearchSelenium(self):
         expected_title = "Selenium"
 
+        self.driver.get("https://www.google.com")
         question_input = self.driver.find_element(By.NAME, "q")
         question_input.send_keys("selenium")
         question_input.send_keys(Keys.ENTER)

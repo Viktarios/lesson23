@@ -34,3 +34,4 @@ class SimpleGoogleTest(unittest.TestCase):
 
         self.assertEqual(expected_title, actual_title)
 
+
